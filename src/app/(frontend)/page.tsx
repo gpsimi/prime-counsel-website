@@ -20,9 +20,7 @@ export const metadata = {
 }
 
 export default function Page() {
-<<<<<<< Updated upstream
-  return <ComingSoon />
-=======
+
   return (
     <Layout>
       <HeroSection />
@@ -30,12 +28,11 @@ export default function Page() {
       <PillarSection />
       <PhilosophyPreview />
       <MeetCoach />
-      <ServicesOverview />
+      <ServicesOverview />  
       <AskPrimeSection />
       <TrustedOrganisations />
       <Testimonials />
       <HomeBlogPreview />
     </Layout>
   )
->>>>>>> Stashed changes
 }
