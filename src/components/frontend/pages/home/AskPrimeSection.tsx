@@ -25,7 +25,7 @@ const AskPrimeSection = () => (
               Laser-focused clarity session addressing one core challenge with actionable direction.
             </p>
 
-            <ul className="mb-6 flex-grow">
+            <ul className="mb-6 grow">
               <li className="flex items-center gap-2 font-body text-sm text-muted-foreground">
                 <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
                 Quick decisions
@@ -57,7 +57,7 @@ const AskPrimeSection = () => (
               Strategy intensive with personalised roadmap development.
             </p>
 
-            <ul className="mb-6 flex-grow">
+            <ul className="mb-6 grow">
               <li className="flex items-center gap-2 font-body text-sm text-navy-foreground/70">
                 <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
                 Vision definition

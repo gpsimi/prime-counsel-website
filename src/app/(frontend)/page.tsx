@@ -31,9 +31,9 @@ export default function Page() {
       <ServicesOverview />  
       <AskPrimeSection />
       <TrustedOrganisations />
+      <Statistics />
       <MeetCoach />
       <Testimonials />
-      <Statistics />
       <HomeBlogPreview />
     </Layout>
   )
