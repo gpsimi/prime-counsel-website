@@ -1,9 +1,13 @@
 import React from 'react'
 import FadeIn from '@/components/frontend/FadeIn'
+import Image from 'next/image'
+import {team1, team2, team3} from "@/assets/images/team/index"
+
 
 const teamMembers = [
   {
     initials: 'OA',
+    img: team1,
     name: 'Orimoloye Ayoola',
     role: 'LEAD CONSULTANT',
     description:
@@ -11,6 +15,7 @@ const teamMembers = [
   },
   {
     initials: 'JB',
+    img: team2,
     name: 'Joel Babatunde',
     role: 'CREATIVE DIRECTOR',
     description:
@@ -18,7 +23,8 @@ const teamMembers = [
   },
   {
     initials: 'FA',
-    name: 'Faith Akerele',
+    img: team3,
+    name: 'Audrey Bakenda Ilomba',
     role: 'BRAND VOICE',
     description:
       "Crafting the narrative and communication strategy that defines Prime Counsel's distinctive presence and messaging.",
@@ -46,9 +52,11 @@ const OurTeam = () => {
           {teamMembers.map((member, idx) => (
             <FadeIn key={idx} delay={0.1 * (idx + 1)}>
               <div className="flex flex-col items-center text-center">
-                <div className="w-24 h-24 md:w-32 md:h-32 rounded-full flex items-center justify-center bg-white/5 border border-white/10 text-gold font-heading text-2xl md:text-3xl mb-8 transition-colors duration-300 hover:bg-white/10">
-                  {member.initials}
-                </div>
+                <Image 
+                  src={member.img}
+                  alt={member.name}
+                  className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mb-8"
+                />
                 <h3 className="text-primary-foreground font-heading text-xl md:text-2xl mb-2">
                   {member.name}
                 </h3>
