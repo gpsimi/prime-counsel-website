@@ -40,7 +40,7 @@ const AskPrimeSection = () => (
               </li>
             </ul>
 
-            <Link href="/contact" className="btn-primary text-sm">
+            <Link href="/shop/askprime" className="btn-primary text-sm">
               Book AskPrime™ →
             </Link>
           </div>
@@ -72,7 +72,7 @@ const AskPrimeSection = () => (
               </li>
             </ul>
 
-            <Link href="/contact" className="btn-gold text-sm">
+            <Link href="/shop/seekcounsel" className="btn-gold text-sm">
               Book SeekCounsel™ →
             </Link>
           </div>
