@@ -17,7 +17,7 @@ export async function POST(req: Request) {
 
     const payload = await getPayload({ config: configPromise })
     
-    const line_items: any[] = []
+    const line_items: Stripe.Checkout.SessionCreateParams.LineItem[] = []
     let primarySessionId = ''
 
     // Securely fetch each product's latest price from the database
