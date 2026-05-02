@@ -17,7 +17,8 @@ export async function POST(req: Request) {
 
     const payload = await getPayload({ config: configPromise })
     
-    const line_items: Stripe.Checkout.SessionCreateParams.LineItem[] = []
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const line_items: any[] = []
     let primarySessionId = ''
 
     // Securely fetch each product's latest price from the database
